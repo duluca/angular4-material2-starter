@@ -1,4 +1,5 @@
-import { RouterModule, Routes } from '@angular/router'
+import { HomeComponent } from './home/home.component'
+import { AppRoutingModule } from './app-routing.module'
 import { BrowserModule } from '@angular/platform-browser'
 import { NgModule } from '@angular/core'
 
@@ -9,28 +10,19 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { MaterialModule } from '@angular/material'
 
 import { FormsModule } from '@angular/forms'
-import { HttpClientModule } from '@angular/common/http'
-import { HomeComponent } from './home/home.component'
+import { HttpClientModule } from '@angular/common/http';
+import { PageNotFoubndComponent } from './page-not-foubnd/page-not-foubnd.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component'
 
-const appRoutes: Routes = [
-  { path: '',
-    redirectTo: '/home',
-    pathMatch: 'full'
-  },
-  {
-    path: 'home',
-    component: HomeComponent
-  }
-]
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    PageNotFoubndComponent,
+    PageNotFoundComponent
   ],
   imports: [
-    RouterModule.forRoot(
-      appRoutes
-    ),
+    AppRoutingModule,
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
