@@ -8,17 +8,16 @@ import { AppComponent } from './app.component'
 import 'hammerjs'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { MaterialModule } from '@angular/material'
+import { FlexLayoutModule } from '@angular/flex-layout'
 
 import { FormsModule } from '@angular/forms'
-import { HttpClientModule } from '@angular/common/http';
-import { PageNotFoubndComponent } from './page-not-foubnd/page-not-foubnd.component';
+import { HttpClientModule } from '@angular/common/http'
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    PageNotFoubndComponent,
     PageNotFoundComponent
   ],
   imports: [
@@ -27,7 +26,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     BrowserAnimationsModule,
     MaterialModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
