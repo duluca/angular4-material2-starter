@@ -1,6 +1,6 @@
 import { AppPage } from './app.po'
 
-describe('ncarb-draft-prototype App', () => {
+describe('A4M2 App', () => {
   let page: AppPage
 
   beforeEach(() => {
@@ -9,6 +9,6 @@ describe('ncarb-draft-prototype App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo()
-    expect(page.getParagraphText()).toEqual('Welcome to app!')
+    expect(page.getParagraphText()).toEqual('Angular 4 Material 2 Starter')
   })
 })

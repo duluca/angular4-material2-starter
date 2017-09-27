@@ -5,7 +5,7 @@ import { NgModule } from '@angular/core'
 
 import { AppComponent } from './app.component'
 
-import 'hammerjs'
+import 'hammerjs';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { MaterialModule } from '@angular/material'
 import { FlexLayoutModule } from '@angular/flex-layout'
