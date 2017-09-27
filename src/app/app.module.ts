@@ -7,12 +7,12 @@ import { AppComponent } from './app.component'
 
 import 'hammerjs'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
-import { MaterialModule } from '@angular/material'
 import { FlexLayoutModule } from '@angular/flex-layout'
 
 import { FormsModule } from '@angular/forms'
 import { HttpClientModule } from '@angular/common/http'
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component'
+import { MaterialModule } from './material.module'
 
 @NgModule({
   declarations: [AppComponent, HomeComponent, PageNotFoundComponent],
