@@ -5,7 +5,7 @@ import { NgModule } from '@angular/core'
 
 import { AppComponent } from './app.component'
 
-import 'hammerjs';
+import 'hammerjs'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { MaterialModule } from '@angular/material'
 import { FlexLayoutModule } from '@angular/flex-layout'
@@ -15,11 +15,7 @@ import { HttpClientModule } from '@angular/common/http'
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component'
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomeComponent,
-    PageNotFoundComponent
-  ],
+  declarations: [AppComponent, HomeComponent, PageNotFoundComponent],
   imports: [
     AppRoutingModule,
     BrowserModule,
@@ -27,9 +23,9 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     MaterialModule,
     FormsModule,
     HttpClientModule,
-    FlexLayoutModule
+    FlexLayoutModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
