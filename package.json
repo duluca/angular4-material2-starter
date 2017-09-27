@@ -71,7 +71,7 @@
     "with-package": "^0.2.0"
   },
   "prettier": {
-    "printWidth": 80,
+    "printWidth": 90,
     "semi": false,
     "singleQuote": true,
     "trailingComma": "es5",
