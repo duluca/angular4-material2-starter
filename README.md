@@ -1,6 +1,8 @@
 # Angular 4 Material 2 Starter
 A batteries-included Mobile-First Angular 4+ and Angular Material 2 Seed Project
 
+Demo Site: https://now-knyiccctgf.now.sh/home
+
 > Looking for a full-stack solution? Check out [Minimal MEAN](https://github.com/excellalabs/minimal-mean) for full-stack, dockerized, TypeScript development setup.
 
 > Run the following command to pull the Docker image: `docker pull duluca/angular4-material2-starter`
