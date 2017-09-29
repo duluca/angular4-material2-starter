@@ -11,6 +11,7 @@ A batteries-included Mobile-First Angular 4+ and Angular Material 2 Seed Project
 - Pre-wired router, _new_ HttpClient and Forms
 - StandardJS compliant with prettier integration
 - Suggested VS Code extensions & settings are packed in
+- Easy cloud deployment with [Zeit Now](https://zeit.co/now)
 - [npm scripts for Docker](https://gist.github.com/duluca/d13e501e870215586271b0f9ce1781ce)
 - [npm scripts for AWS](https://gist.github.com/duluca/2b67eb6c2c85f3d75be8c183ab15266e)
 - [Minimal Node Web Server](https://hub.docker.com/r/duluca/minimal-node-web-server/) v8.4 for Production Publishing
@@ -34,6 +35,14 @@ Angular and Material releases are more frequent. Since the switchover to semver,
 ### Building and Testing
 * `npm run docker:build` to build the Docker image
 * `npm run docker:debug` to test the Docker image
+
+### Zeit Now Deployment
+* Build and publish your Docker image
+* Install now-cli by executing `npm install -g now`
+* Navigate to this project's `now` folder: `cd now`
+* Update the `Dockerfile` to pull from your image
+* Execute `now --public --docker`
+* Voila, your project is publish on the web!
 
 ### Push Button Deployments
 > Below instruction have not been tested on a Windows environment
