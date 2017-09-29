@@ -23,7 +23,7 @@
     "update:run": "ncu -u && npm install",
     "update:all": "ncu -a && npm install",
     "predocker:build": "npm run build -- --prod",
-    "docker:build": "cross-conf-env docker image build . -t $npm_package_config_imageRepo:$npm_package_version",
+    "docker:build": "cross-conf-env docker image build -f Dockerfile.minimal . -t $npm_package_config_imageRepo:$npm_package_version",
     "postdocker:build": "npm run docker:tag",
     "docker:tag": " cross-conf-env docker image tag $npm_package_config_imageRepo:$npm_package_version $npm_package_config_imageRepo:latest",
     "docker:run": "run-s -c docker:clean docker:runHelper",
